@@ -131,11 +131,11 @@ namespace Slowshooter
             // draw the Turn Indicator
             Console.SetCursorPosition(3, 5);
             Console.ForegroundColor = playerColors[turn % 2];
-            Console.Write($"PLAYER {turn % 2 + 1}'S TURN!");
+            Console.Write($"PLAYER {turn % 2 + 1}'S TURN! LETS GO!");
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("\nUSE WASD or IJKL to move");
-
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
